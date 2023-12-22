@@ -40,7 +40,7 @@ node () {
  				bat "mvn package -DskipTests " 
 			} }
  		} 
-	}
+	
 	stage ('APP-IC - Post build actions') {
 /*
 Please note this is a direct conversion of post-build actions. 
@@ -59,4 +59,4 @@ bat "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
 }
 }
 }
-}
+		
